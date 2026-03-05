@@ -25,7 +25,7 @@ const LaureateAgencies = () => {
       background: "#FAFAF8",
       color: "#1A2332",
       fontFamily: "'Georgia', 'Times New Roman', serif",
-      overflowX: "hidden",
+      
     }}>
       {/* ── NAV ── */}
       <nav style={{
@@ -34,7 +34,6 @@ const LaureateAgencies = () => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        ...fadeIn(0.1),
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
           <Link to="/"><img src={LOGO_SRC} alt="Laureate Edition" style={{ height: "70px", width: "auto" }}/></Link>
@@ -55,7 +54,8 @@ const LaureateAgencies = () => {
         <span style={{ display: "block", width: "24px", height: "2px", background: "#1A2332" }} />
       </button>
       {menuOpen && (
-        <div style={{ position: "absolute", top: "100%", left: 0, right: 0, background: "#FAFAF8", padding: "24px 48px", display: "flex", flexDirection: "column", gap: "20px", fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase", zIndex: 100, boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}>
+        <div style={{ position: "fixed", top: "0", left: "0", right: "0", bottom: "0", width: "100vw", height: "100vh", background: "#FAFAF8", padding: "24px 48px", display: "flex", flexDirection: "column", gap: "20px", fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase", zIndex: 9999, boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}>
+          <button onClick={() => setMenuOpen(false)} style={{ alignSelf: "flex-end", background: "none", border: "none", fontSize: "24px", cursor: "pointer", color: "#8C8C8C", marginBottom: "20px" }}>✕</button>
           <Link to="/" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
           <Link to="/agencies" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>For Agencies</Link>
