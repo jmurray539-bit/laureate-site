@@ -5,6 +5,7 @@ const LaureateContact = () => {
   const [loaded, setLoaded] = useState(false);
   const [hoverProject, setHoverProject] = useState(false);
   const [hoverAgency, setHoverAgency] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setLoaded(true), 100);
@@ -37,13 +38,37 @@ const LaureateContact = () => {
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
           <Link to="/"><img src={LOGO_SRC} alt="Laureate Edition" style={{ height: "70px", width: "auto" }}/></Link>
         </div>
-        <div style={{ display: "flex", gap: "36px", fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase" }}>
+        <div style={{ display: "flex", gap: "36px", fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase" }} className="le-desktop-nav">
           <Link to="/" style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
           <Link to="/about" style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
           <Link to="/agencies" style={{ color: "#8C8C8C", textDecoration: "none" }}>For Agencies</Link>
           <Link to="/contact" style={{ color: "#1A2332", textDecoration: "none" }}>Contact</Link>
         </div>
-      </nav>
+        <button
+        onClick={() => setMenuOpen(!menuOpen)}
+        style={{ display: "none", flexDirection: "column", gap: "5px", background: "none", border: "none", cursor: "pointer", padding: "4px" }}
+        className="le-hamburger"
+      >
+        <span style={{ display: "block", width: "24px", height: "2px", background: "#1A2332" }} />
+        <span style={{ display: "block", width: "24px", height: "2px", background: "#1A2332" }} />
+        <span style={{ display: "block", width: "24px", height: "2px", background: "#1A2332" }} />
+      </button>
+      {menuOpen && (
+        <div style={{ position: "absolute", top: "100%", left: 0, right: 0, background: "#FAFAF8", padding: "24px 48px", display: "flex", flexDirection: "column", gap: "20px", fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase", zIndex: 100, boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}>
+          <Link to="/" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
+          <Link to="/about" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
+          <Link to="/agencies" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>For Agencies</Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>Contact</Link>
+        </div>
+      )}
+      <style>{`
+        .le-hamburger { display: none !important; }
+        @media (max-width: 768px) {
+          .le-desktop-nav { display: none !important; }
+          .le-hamburger { display: flex !important; }
+        }
+      `}</style>
+    </nav>
 
       {/* HERO */}
       <section style={{
