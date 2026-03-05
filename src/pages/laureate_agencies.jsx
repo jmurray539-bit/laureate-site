@@ -42,7 +42,7 @@ const LaureateAgencies = () => {
           <Link to="/" style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
           <Link to="/about" style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
           <Link to="/agencies" style={{ color: "#1A2332", textDecoration: "none" }}>For Agencies</Link>
-          <Link to="/contact" style={{ color: "#8C8C8C", textDecoration: "none" }}>Contact</Link>
+          <Link to="/contact" style={{ color: "#8C8C8C", textDecoration: "none" }}>Discuss a Project</Link>
         </div>
         <button
         onClick={() => setMenuOpen(!menuOpen)}
@@ -59,7 +59,7 @@ const LaureateAgencies = () => {
           <Link to="/" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
           <Link to="/agencies" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>For Agencies</Link>
-          <Link to="/contact" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>Contact</Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>Discuss a Project</Link>
         </div>
       )}
       <style>{`
