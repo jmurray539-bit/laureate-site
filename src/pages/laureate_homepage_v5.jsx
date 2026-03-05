@@ -28,6 +28,7 @@ const LaureateHomepage = () => {
       {/* ── NAV ── */}
       <nav style={{
         padding: "28px 48px",
+        position: "relative",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
@@ -315,15 +316,15 @@ const LaureateHomepage = () => {
                 This is not
               </p>
               <div style={{ fontSize: "15px", color: "#8C8C8C", lineHeight: 2.0 }}>
-                <p style={{ margin: "0 0 4px", paddingLeft: "20px", position: "relative" }}>
+                <p style={{ margin: "0 0 4px", paddingLeft: "20px" }}>
                   <span style={{ position: "absolute", left: 0, color: "#BCBCBC" }}>—</span>
                   A mass-market ghostwriting shop
                 </p>
-                <p style={{ margin: "0 0 4px", paddingLeft: "20px", position: "relative" }}>
+                <p style={{ margin: "0 0 4px", paddingLeft: "20px" }}>
                   <span style={{ position: "absolute", left: 0, color: "#BCBCBC" }}>—</span>
                   A memoir publisher
                 </p>
-                <p style={{ margin: 0, paddingLeft: "20px", position: "relative" }}>
+                <p style={{ margin: 0, paddingLeft: "20px" }}>
                   <span style={{ position: "absolute", left: 0, color: "#BCBCBC" }}>—</span>
                   An open submission press
                 </p>
@@ -341,15 +342,15 @@ const LaureateHomepage = () => {
                 This is
               </p>
               <div style={{ fontSize: "15px", color: "#5A6270", lineHeight: 2.0 }}>
-                <p style={{ margin: "0 0 4px", paddingLeft: "20px", position: "relative" }}>
+                <p style={{ margin: "0 0 4px", paddingLeft: "20px" }}>
                   <span style={{ position: "absolute", left: 0, color: "#9E7C4B" }}>—</span>
                   A curated editorial project
                 </p>
-                <p style={{ margin: "0 0 4px", paddingLeft: "20px", position: "relative" }}>
+                <p style={{ margin: "0 0 4px", paddingLeft: "20px" }}>
                   <span style={{ position: "absolute", left: 0, color: "#9E7C4B" }}>—</span>
                   Built with established professionals
                 </p>
-                <p style={{ margin: 0, paddingLeft: "20px", position: "relative" }}>
+                <p style={{ margin: 0, paddingLeft: "20px" }}>
                   <span style={{ position: "absolute", left: 0, color: "#9E7C4B" }}>—</span>
                   Shaped through guided interviews
                 </p>

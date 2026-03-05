@@ -56,6 +56,7 @@ const LaureateAbout = () => {
       {/* ── NAV ── */}
       <nav style={{
         padding: "28px 48px",
+        position: "relative",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
