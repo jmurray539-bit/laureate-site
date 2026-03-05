@@ -101,9 +101,7 @@ const LaureateHomepage = () => {
           margin: "0 auto 20px",
           ...fadeIn(0.7),
         }}>
-          We work with the people behind the ideas. The frameworks
-          others teach. The organizations others study. The practices
-          others follow.
+          We work with the people behind the ideas — the frameworks others teach, the organizations others study, the practices others follow.
         </p>
 
         <p style={{
@@ -126,6 +124,23 @@ const LaureateHomepage = () => {
           opacity: 0.4,
           ...fadeIn(0.9),
         }} />
+        <div style={{ marginTop: "32px", ...fadeIn(1.0) }}>
+          <Link
+            to="/contact"
+            style={{
+              color: "#C8B89A",
+              textDecoration: "none",
+              fontSize: "14px",
+              letterSpacing: "2px",
+              textTransform: "uppercase",
+              transition: "color 0.2s ease",
+            }}
+            onMouseEnter={e => e.target.style.color = "#9E7C4B"}
+            onMouseLeave={e => e.target.style.color = "#C8B89A"}
+          >
+            Discuss a potential project →
+          </Link>
+        </div>
         </div>
       </section>
 
@@ -308,8 +323,8 @@ const LaureateHomepage = () => {
           }}>
             <div>
               <p style={{
-                fontSize: "12px",
-                letterSpacing: "3px",
+                fontSize: "14px",
+                letterSpacing: "4px",
                 textTransform: "uppercase",
                 color: "#BCBCBC",
                 marginBottom: "14px",
@@ -334,8 +349,8 @@ const LaureateHomepage = () => {
             </div>
             <div>
               <p style={{
-                fontSize: "12px",
-                letterSpacing: "3px",
+                fontSize: "14px",
+                letterSpacing: "4px",
                 textTransform: "uppercase",
                 color: "#9E7C4B",
                 marginBottom: "14px",
@@ -384,16 +399,22 @@ const LaureateHomepage = () => {
           ...fadeIn(1.35),
         }}>
           <p style={{
+            fontSize: "14px",
+            letterSpacing: "4px",
+            textTransform: "uppercase",
+            color: "#9E7C4B",
+            marginBottom: "24px",
+          }}>
+            Editorial Background
+          </p>
+          <p style={{
             fontSize: "18px",
             lineHeight: 1.9,
             color: "#5A6270",
             maxWidth: "620px",
             margin: "0 auto 24px",
           }}>
-            Laureate Edition was founded by a team of publishing
-            professionals who have guided books to market for business
-            leaders, senior military officers, Olympic gold medalists,
-            faith leaders, and celebrated restaurateurs — among others.
+            Laureate Edition was founded by publishing professionals who have guided hundreds of books to publication for business leaders, senior military officers, Olympic gold medalists, nonprofit founders, and other experienced practitioners.
           </p>
           <p style={{
             fontSize: "17px",
@@ -402,11 +423,7 @@ const LaureateHomepage = () => {
             maxWidth: "620px",
             margin: "0 auto",
           }}>
-            We repeatedly met professionals with significant influence
-            whose ideas were widely used but never formally captured.
-            Laureate Edition was created to give those ideas a permanent
-            form — without requiring the author to step away from their
-            work to write a traditional manuscript alone.
+            Over the past decade, we repeatedly encountered professionals whose ideas were widely used but never formally captured in a book. Laureate Edition was created to give those ideas a permanent form — without requiring the author to step away from their work to write a traditional manuscript alone.
           </p>
         </div>
       </section>
