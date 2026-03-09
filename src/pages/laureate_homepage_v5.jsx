@@ -205,14 +205,14 @@ const LaureateHomepage = () => {
         }
         .forthcoming-book {
           flex-shrink: 0;
-          width: 52%;
+          width: 60%;
           overflow: visible;
           align-self: center;
         }
         .forthcoming-text {
           flex: 1;
           padding: 20px 80px 60px 72px;
-          margin-left: -80px;
+          margin-left: -120px;
           position: relative;
           z-index: 2;
           align-self: flex-start;
@@ -424,76 +424,82 @@ const LaureateHomepage = () => {
       }}>
         <div style={{
           borderTop: "1px solid #E8E5E0",
-          paddingTop: "56px",
-          textAlign: "center",
+          paddingTop: "64px",
           ...fadeIn(1.3),
         }}>
           <div style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1px 1fr",
+            gap: "0 48px",
             maxWidth: "720px",
             margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "32px 56px",
           }}>
-            <div>
+
+            {/* THIS IS NOT */}
+            <div style={{ textAlign: "center" }}>
               <p style={{
-                fontSize: "16px",
-                letterSpacing: "3px",
+                fontSize: "11px",
+                letterSpacing: "4px",
                 textTransform: "uppercase",
                 color: "#BCBCBC",
-                marginBottom: "16px",
-                textAlign: "center",
+                marginBottom: "28px",
               }}>
                 This is not
               </p>
-              <div style={{ fontSize: "16px", color: "#8C8C8C", lineHeight: 1.9 }}>
-                <p style={{ margin: "0 0 4px", paddingLeft: "20px" }}>
-                  <span style={{ position: "absolute", left: 0, color: "#BCBCBC" }}>—</span>
-                  A mass-market ghostwriting shop
+              {[
+                "A mass-market ghostwriting shop",
+                "A memoir publisher",
+                "An open submission press",
+              ].map((item, i) => (
+                <p key={i} style={{
+                  fontSize: "17px",
+                  color: "#BCBCBC",
+                  lineHeight: 1.6,
+                  margin: "0 0 16px",
+                }}>
+                  {item}
                 </p>
-                <p style={{ margin: "0 0 4px", paddingLeft: "20px" }}>
-                  <span style={{ position: "absolute", left: 0, color: "#BCBCBC" }}>—</span>
-                  A memoir publisher
-                </p>
-                <p style={{ margin: 0, paddingLeft: "20px" }}>
-                  <span style={{ position: "absolute", left: 0, color: "#BCBCBC" }}>—</span>
-                  An open submission press
-                </p>
-              </div>
+              ))}
             </div>
-            <div>
+
+            {/* VERTICAL DIVIDER */}
+            <div style={{ background: "#E8E5E0", width: "1px" }} />
+
+            {/* THIS IS */}
+            <div style={{ textAlign: "center" }}>
               <p style={{
-                fontSize: "16px",
-                letterSpacing: "3px",
+                fontSize: "11px",
+                letterSpacing: "4px",
                 textTransform: "uppercase",
                 color: "#9E7C4B",
-                marginBottom: "16px",
-                textAlign: "center",
+                marginBottom: "28px",
               }}>
                 This is
               </p>
-              <div style={{ fontSize: "16px", color: "#5A6270", lineHeight: 1.9 }}>
-                <p style={{ margin: "0 0 4px", paddingLeft: "20px" }}>
-                  <span style={{ position: "absolute", left: 0, color: "#9E7C4B" }}>—</span>
-                  A curated editorial project
+              {[
+                "A curated editorial project",
+                "Built with established professionals",
+                "Shaped through guided interviews",
+              ].map((item, i) => (
+                <p key={i} style={{
+                  fontSize: "17px",
+                  color: "#5A6270",
+                  lineHeight: 1.6,
+                  margin: "0 0 16px",
+                }}>
+                  {item}
                 </p>
-                <p style={{ margin: "0 0 4px", paddingLeft: "20px" }}>
-                  <span style={{ position: "absolute", left: 0, color: "#9E7C4B" }}>—</span>
-                  Built with established professionals
-                </p>
-                <p style={{ margin: 0, paddingLeft: "20px" }}>
-                  <span style={{ position: "absolute", left: 0, color: "#9E7C4B" }}>—</span>
-                  Shaped through guided interviews
-                </p>
-              </div>
+              ))}
             </div>
+
           </div>
           <p style={{
             fontSize: "14px",
             color: "#BCBCBC",
-            marginTop: "36px",
+            marginTop: "40px",
             letterSpacing: "1px",
             fontStyle: "italic",
+            textAlign: "center",
           }}>
             Projects are considered by invitation and referral.
           </p>
