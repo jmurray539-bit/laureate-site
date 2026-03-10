@@ -181,20 +181,6 @@ const LaureateAgencies = () => {
               </p>
             </div>
           ))}
-                fontWeight: "normal",
-              }}>
-                {item.title}
-              </p>
-              <p style={{
-                fontSize: "18px",
-                color: "#8C8C8C",
-                margin: 0,
-                lineHeight: 1.85,
-              }}>
-                {item.text}
-              </p>
-            </div>
-          ))}
         </div>
       </section>
 
