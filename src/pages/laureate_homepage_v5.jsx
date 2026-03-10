@@ -221,6 +221,7 @@ const LaureateHomepage = () => {
           position: relative;
           z-index: 2;
           align-self: flex-start;
+          background: transparent;
         }
         @media (max-width: 768px) {
           .forthcoming-row {
