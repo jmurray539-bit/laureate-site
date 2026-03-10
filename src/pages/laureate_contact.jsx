@@ -22,7 +22,7 @@ const LaureateContact = () => {
   return (
     <div style={{
       minHeight: "100vh",
-      background: "#FAFAF8",
+      background: "#FFFFFF",
       color: "#1A2332",
       fontFamily: "'Georgia', 'Times New Roman', serif",
       
@@ -38,7 +38,7 @@ const LaureateContact = () => {
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
           <Link to="/"><img src={LOGO_SRC} alt="Laureate Edition" style={{ height: "70px", width: "auto" }}/></Link>
         </div>
-        <div style={{ display: "flex", gap: "36px", fontSize: "15px", letterSpacing: "2px", textTransform: "uppercase" }} className="le-desktop-nav">
+        <div style={{ display: "flex", gap: "36px", fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase" }} className="le-desktop-nav">
           <Link to="/" style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
           <Link to="/about" style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
           <Link to="/agencies" style={{ color: "#8C8C8C", textDecoration: "none" }}>For Agencies</Link>
@@ -54,7 +54,7 @@ const LaureateContact = () => {
         <span style={{ display: "block", width: "24px", height: "2px", background: "#1A2332" }} />
       </button>
       {menuOpen && (
-        <div style={{ position: "fixed", top: "0", left: "0", right: "0", bottom: "0", width: "100vw", height: "100vh", background: "#FAFAF8", padding: "24px 48px", display: "flex", flexDirection: "column", gap: "20px", fontSize: "15px", letterSpacing: "2px", textTransform: "uppercase", zIndex: 9999, boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}>
+        <div style={{ position: "fixed", top: "0", left: "0", right: "0", bottom: "0", width: "100vw", height: "100vh", background: "#FFFFFF", padding: "24px 48px", display: "flex", flexDirection: "column", gap: "20px", fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase", zIndex: 9999, boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}>
           <button onClick={() => setMenuOpen(false)} style={{ alignSelf: "flex-end", background: "none", border: "none", fontSize: "28px", cursor: "pointer", color: "#8C8C8C", marginBottom: "20px" }}>✕</button>
           <Link to="/" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
@@ -87,14 +87,15 @@ const LaureateContact = () => {
             fontWeight: "normal",
             lineHeight: 1.4,
             color: "#E8E4DF",
-            margin: "0 0 24px",
+            margin: "0 0 28px",
             ...fadeIn(0.4),
           }}>
             Projects begin with a conversation.
           </h1>
+          <div style={{ width: "40px", height: "1px", background: "#9E7C4B", margin: "0 auto 28px", ...fadeIn(0.5) }} />
           <p style={{
-            fontSize: "21px",
-            lineHeight: 1.9,
+            fontSize: "18px",
+            lineHeight: 1.85,
             color: "#8899AA",
             maxWidth: "640px",
             margin: "0 auto",
@@ -122,23 +123,24 @@ const LaureateContact = () => {
           {/* Authors */}
           <div style={{
             padding: "40px 36px",
-            background: "#F5F3EF",
+            background: "#F7F5F2",
             textAlign: "center",
+            borderTop: "2px solid #9E7C4B",
           }}>
             <p style={{
-              fontSize: "12px",
-              letterSpacing: "3px",
+              fontSize: "16px",
+              letterSpacing: "4px",
               textTransform: "uppercase",
               color: "#9E7C4B",
-              marginBottom: "20px",
+              marginBottom: "24px",
             }}>
               For authors
             </p>
             <p style={{
-              fontSize: "21px",
-              lineHeight: 1.9,
+              fontSize: "18px",
+              lineHeight: 1.85,
               color: "#5A6270",
-              margin: "0 0 8px",
+              margin: "0 0 16px",
             }}>
               You have spent a career building expertise that others
               rely on. A short call to discuss whether a Laureate Edition
@@ -173,7 +175,7 @@ const LaureateContact = () => {
               Discuss a potential project
             </a>
             <p style={{
-              fontSize: "15px",
+              fontSize: "13px",
               color: "#BCBCBC",
               marginTop: "16px",
               marginBottom: 0,
@@ -185,23 +187,24 @@ const LaureateContact = () => {
           {/* Agencies */}
           <div style={{
             padding: "40px 36px",
-            background: "#F5F3EF",
+            background: "#F7F5F2",
             textAlign: "center",
+            borderTop: "2px solid #9E7C4B",
           }}>
             <p style={{
-              fontSize: "12px",
-              letterSpacing: "3px",
+              fontSize: "16px",
+              letterSpacing: "4px",
               textTransform: "uppercase",
               color: "#9E7C4B",
-              marginBottom: "20px",
+              marginBottom: "24px",
             }}>
               For agencies & representation
             </p>
             <p style={{
-              fontSize: "21px",
-              lineHeight: 1.9,
+              fontSize: "18px",
+              lineHeight: 1.85,
               color: "#5A6270",
-              margin: "0 0 8px",
+              margin: "0 0 16px",
             }}>
               We welcome inquiries from agents and managers representing
               established experts. Materials available upon request,
@@ -236,7 +239,7 @@ const LaureateContact = () => {
               Request materials
             </a>
             <p style={{
-              fontSize: "15px",
+              fontSize: "13px",
               color: "#BCBCBC",
               marginTop: "16px",
               marginBottom: 0,
@@ -268,8 +271,8 @@ const LaureateContact = () => {
             What to expect
           </p>
           <p style={{
-            fontSize: "21px",
-            lineHeight: 2.0,
+            fontSize: "18px",
+            lineHeight: 1.85,
             color: "#5A6270",
             margin: "0 0 24px",
           }}>
@@ -279,8 +282,8 @@ const LaureateContact = () => {
             serve. There is no obligation and no commitment at this stage.
           </p>
           <p style={{
-            fontSize: "21px",
-            lineHeight: 2.0,
+            fontSize: "18px",
+            lineHeight: 1.85,
             color: "#5A6270",
             margin: 0,
           }}>
@@ -299,9 +302,10 @@ const LaureateContact = () => {
         textAlign: "center",
         ...fadeIn(1.1),
       }}>
+        <div style={{ width: "40px", height: "1px", background: "#C8B89A", margin: "0 auto 40px" }} />
         <p style={{
-          fontSize: "21px",
-          lineHeight: 2.0,
+          fontSize: "18px",
+          lineHeight: 1.85,
           color: "#5A6270",
           fontStyle: "italic",
           margin: 0,
