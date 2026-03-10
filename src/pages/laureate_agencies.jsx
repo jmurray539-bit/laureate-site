@@ -22,7 +22,7 @@ const LaureateAgencies = () => {
   return (
     <div style={{
       minHeight: "100vh",
-      background: "#FAFAF8",
+      background: "#FFFFFF",
       color: "#1A2332",
       fontFamily: "'Georgia', 'Times New Roman', serif",
       
@@ -38,7 +38,7 @@ const LaureateAgencies = () => {
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
           <Link to="/"><img src={LOGO_SRC} alt="Laureate Edition" style={{ height: "70px", width: "auto" }}/></Link>
         </div>
-        <div style={{ display: "flex", gap: "36px", fontSize: "15px", letterSpacing: "2px", textTransform: "uppercase" }} className="le-desktop-nav">
+        <div style={{ display: "flex", gap: "36px", fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase" }} className="le-desktop-nav">
           <Link to="/" style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
           <Link to="/about" style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
           <Link to="/agencies" style={{ color: "#1A2332", textDecoration: "none" }}>For Agencies</Link>
@@ -54,7 +54,7 @@ const LaureateAgencies = () => {
         <span style={{ display: "block", width: "24px", height: "2px", background: "#1A2332" }} />
       </button>
       {menuOpen && (
-        <div style={{ position: "fixed", top: "0", left: "0", right: "0", bottom: "0", width: "100vw", height: "100vh", background: "#FAFAF8", padding: "24px 48px", display: "flex", flexDirection: "column", gap: "20px", fontSize: "15px", letterSpacing: "2px", textTransform: "uppercase", zIndex: 9999, boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}>
+        <div style={{ position: "fixed", top: "0", left: "0", right: "0", bottom: "0", width: "100vw", height: "100vh", background: "#FFFFFF", padding: "24px 48px", display: "flex", flexDirection: "column", gap: "20px", fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase", zIndex: 9999, boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}>
           <button onClick={() => setMenuOpen(false)} style={{ alignSelf: "flex-end", background: "none", border: "none", fontSize: "28px", cursor: "pointer", color: "#8C8C8C", marginBottom: "20px" }}>✕</button>
           <Link to="/" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
@@ -102,7 +102,7 @@ const LaureateAgencies = () => {
             who represent established experts.
           </h1>
           <p style={{
-            fontSize: "21px",
+            fontSize: "18px",
             lineHeight: 1.9,
             color: "#8899AA",
             maxWidth: "560px",
@@ -138,7 +138,7 @@ const LaureateAgencies = () => {
         <div style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
-          gap: "36px 48px",
+          border: "1px solid #E8E5E0",
         }}>
           {[
             {
@@ -158,11 +158,15 @@ const LaureateAgencies = () => {
               text: "Each project follows a clear editorial calendar with structured milestones. We communicate progress at every stage so there are no surprises for you or your client."
             },
           ].map((item, i) => (
-            <div key={i} style={{ padding: "8px 0" }}>
+            <div key={i} style={{
+              padding: "32px 36px",
+              borderRight: i % 2 === 0 ? "1px solid #E8E5E0" : "none",
+              borderBottom: i < 2 ? "1px solid #E8E5E0" : "none",
+            }}>
               <p style={{
-                fontSize: "21px",
+                fontSize: "22px",
                 color: "#1A2332",
-                margin: "0 0 8px",
+                margin: "0 0 10px",
                 fontWeight: "normal",
               }}>
                 {item.title}
@@ -171,7 +175,21 @@ const LaureateAgencies = () => {
                 fontSize: "18px",
                 color: "#8C8C8C",
                 margin: 0,
-                lineHeight: 1.7,
+                lineHeight: 1.85,
+              }}>
+                {item.text}
+              </p>
+            </div>
+          ))}
+                fontWeight: "normal",
+              }}>
+                {item.title}
+              </p>
+              <p style={{
+                fontSize: "18px",
+                color: "#8C8C8C",
+                margin: 0,
+                lineHeight: 1.85,
               }}>
                 {item.text}
               </p>
@@ -186,7 +204,7 @@ const LaureateAgencies = () => {
         padding: "72px 48px",
       }}>
         <div style={{
-          maxWidth: "700px",
+          maxWidth: "780px",
           margin: "0 auto",
           textAlign: "center",
           ...fadeIn(1.0),
@@ -201,8 +219,8 @@ const LaureateAgencies = () => {
             How projects develop
           </p>
           <p style={{
-            fontSize: "21px",
-            lineHeight: 2.0,
+            fontSize: "18px",
+            lineHeight: 1.85,
             color: "#5A6270",
             margin: "0 0 32px",
           }}>
@@ -214,8 +232,8 @@ const LaureateAgencies = () => {
             maintaining full intellectual direction throughout.
           </p>
           <p style={{
-            fontSize: "21px",
-            lineHeight: 2.0,
+            fontSize: "18px",
+            lineHeight: 1.85,
             color: "#5A6270",
             margin: "0 0 32px",
           }}>
@@ -253,8 +271,8 @@ const LaureateAgencies = () => {
           Ideal clients
         </p>
         <p style={{
-          fontSize: "21px",
-          lineHeight: 2.0,
+          fontSize: "18px",
+          lineHeight: 1.85,
           color: "#5A6270",
           textAlign: "center",
           maxWidth: "720px",
@@ -289,7 +307,7 @@ const LaureateAgencies = () => {
           ].map((item, i) => (
             <div key={i} style={{ padding: "8px 0" }}>
               <p style={{
-                fontSize: "21px",
+                fontSize: "22px",
                 color: "#1A2332",
                 margin: "0 0 6px",
                 fontWeight: "normal",
@@ -300,7 +318,7 @@ const LaureateAgencies = () => {
                 fontSize: "18px",
                 color: "#8C8C8C",
                 margin: 0,
-                lineHeight: 1.6,
+                lineHeight: 1.85,
               }}>
                 {item.text}
               </p>
@@ -333,8 +351,9 @@ const LaureateAgencies = () => {
           <div style={{
             display: "flex",
             justifyContent: "center",
-            gap: "48px",
+            alignItems: "center",
             flexWrap: "wrap",
+            gap: "0",
             marginBottom: "32px",
           }}>
             {[
@@ -342,13 +361,19 @@ const LaureateAgencies = () => {
               "Prior work samples",
               "Production timeline",
               "Editorial process outline",
-            ].map((item, i) => (
-              <span key={i} style={{
-                fontSize: "18px",
-                color: "#5A6270",
-                letterSpacing: "0.3px",
-              }}>
-                {item}
+            ].map((item, i, arr) => (
+              <span key={i} style={{ display: "flex", alignItems: "center" }}>
+                <span style={{
+                  fontSize: "18px",
+                  color: "#5A6270",
+                  letterSpacing: "0.3px",
+                  padding: "6px 20px",
+                }}>
+                  {item}
+                </span>
+                {i < arr.length - 1 && (
+                  <span style={{ color: "#C8B89A", fontSize: "14px" }}>·</span>
+                )}
               </span>
             ))}
           </div>
