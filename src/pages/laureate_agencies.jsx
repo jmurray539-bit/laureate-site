@@ -67,6 +67,8 @@ const LaureateAgencies = () => {
         @media (max-width: 768px) {
           .le-desktop-nav { display: none !important; }
           .le-hamburger { display: flex !important; }
+          .agencies-provide-grid { grid-template-columns: 1fr !important; }
+          .agencies-ideal-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </nav>
@@ -135,7 +137,7 @@ const LaureateAgencies = () => {
           What we provide
         </p>
 
-        <div style={{
+        <div className="agencies-provide-grid" style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           border: "1px solid #E8E5E0",
@@ -268,7 +270,7 @@ const LaureateAgencies = () => {
           was established through decades of practice, not through
           publishing. Our best-fit authors tend to be:
         </p>
-        <div style={{
+        <div className="agencies-ideal-grid" style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: "28px 48px",
