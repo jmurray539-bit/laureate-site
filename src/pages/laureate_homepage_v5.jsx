@@ -157,9 +157,9 @@ const LaureateHomepage = () => {
 
       {/* ── THE MIRROR ── */}
       <section style={{
-        maxWidth: "720px",
+        maxWidth: "680px",
         margin: "0 auto",
-        padding: "80px 48px 88px",
+        padding: "56px 48px 64px",
         textAlign: "center",
         ...fadeIn(1.0),
       }}>
@@ -168,25 +168,29 @@ const LaureateHomepage = () => {
           letterSpacing: "4px",
           textTransform: "uppercase",
           color: "#9E7C4B",
-          marginBottom: "16px",
+          marginBottom: "24px",
         }}>
           A familiar pattern
         </p>
         <p style={{
-          fontSize: "19px",
-          lineHeight: 1.85,
-          color: "#5A6270",
+          fontSize: "22px",
+          lineHeight: 1.7,
+          color: "#1A2332",
+          fontWeight: "normal",
           margin: "0 0 20px",
         }}>
-          Over time, experienced professionals accumulate more than
-          stories. They develop frameworks, judgments, and ways of
-          thinking that others begin to rely on. Colleagues quote them.
-          Teams adopt their methods. Students and clients repeat
-          their language. In some cases, the ideas travel so far from
-          their origin that the field forgets where they started.
+          Over time, experienced professionals accumulate more than stories.
         </p>
         <p style={{
-          fontSize: "19px",
+          fontSize: "18px",
+          lineHeight: 1.85,
+          color: "#5A6270",
+          margin: "0 0 16px",
+        }}>
+          They develop frameworks, judgments, and ways of thinking that others begin to rely on. Colleagues quote them. Teams adopt their methods. Students and clients repeat their language. In some cases, the ideas travel so far from their origin that the field forgets where they started.
+        </p>
+        <p style={{
+          fontSize: "18px",
           lineHeight: 1.85,
           color: "#5A6270",
           margin: "0",
@@ -244,7 +248,7 @@ const LaureateHomepage = () => {
           letterSpacing: "4px",
           textTransform: "uppercase",
           color: "#9E7C4B",
-          marginBottom: "48px",
+          marginBottom: "24px",
           textAlign: "center",
         }}>
           Forthcoming
@@ -266,7 +270,7 @@ const LaureateHomepage = () => {
           {/* Text — overlaps image slightly so shadow shows through */}
           <div className="forthcoming-text">
             <p style={{
-              fontSize: "36px",
+              fontSize: "32px",
               lineHeight: 1.1,
               color: "#1A2332",
               fontWeight: "600",
@@ -353,7 +357,7 @@ const LaureateHomepage = () => {
 
       {/* ── WHO WE WORK WITH ── */}
       <section style={{
-        padding: "88px 48px",
+        padding: "64px 48px 64px",
         maxWidth: "860px",
         margin: "0 auto",
       }}>
@@ -363,7 +367,7 @@ const LaureateHomepage = () => {
           textTransform: "uppercase",
           color: "#9E7C4B",
           textAlign: "center",
-          marginBottom: "16px",
+          marginBottom: "40px",
           ...fadeIn(1.2),
         }}>
           Who we work with
@@ -372,8 +376,8 @@ const LaureateHomepage = () => {
         <div style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
-          gap: "28px 56px",
-          marginTop: "40px",
+          gap: "0",
+          border: "1px solid #E8E5E0",
           ...fadeIn(1.25),
         }}>
           {[
@@ -391,10 +395,14 @@ const LaureateHomepage = () => {
             },
             {
               title: "Practitioners and pioneers",
-              text: "whose expertise was built in the field, not in a classroom"
+              text: "whose expertise was built in the field — in business, sport, or public leadership"
             },
           ].map((item, i) => (
-            <div key={i} style={{ padding: "8px 0" }}>
+            <div key={i} style={{
+              padding: "28px 32px",
+              borderRight: i % 2 === 0 ? "1px solid #E8E5E0" : "none",
+              borderBottom: i < 2 ? "1px solid #E8E5E0" : "none",
+            }}>
               <p style={{
                 fontSize: "18px",
                 color: "#1A2332",
@@ -418,27 +426,27 @@ const LaureateHomepage = () => {
 
       {/* ── WHAT THIS IS ── */}
       <section style={{
-        padding: "0 48px 88px",
+        padding: "0 48px 64px",
         maxWidth: "860px",
         margin: "0 auto",
       }}>
         <div style={{
           borderTop: "1px solid #E8E5E0",
-          paddingTop: "64px",
+          paddingTop: "56px",
           ...fadeIn(1.3),
         }}>
           <div style={{
             display: "grid",
             gridTemplateColumns: "1fr 1px 1fr",
             gap: "0 48px",
-            maxWidth: "720px",
+            maxWidth: "640px",
             margin: "0 auto",
           }}>
 
             {/* THIS IS NOT */}
             <div style={{ textAlign: "center" }}>
               <p style={{
-                fontSize: "11px",
+                fontSize: "16px",
                 letterSpacing: "4px",
                 textTransform: "uppercase",
                 color: "#BCBCBC",
@@ -468,7 +476,7 @@ const LaureateHomepage = () => {
             {/* THIS IS */}
             <div style={{ textAlign: "center" }}>
               <p style={{
-                fontSize: "11px",
+                fontSize: "16px",
                 letterSpacing: "4px",
                 textTransform: "uppercase",
                 color: "#9E7C4B",
@@ -550,13 +558,12 @@ const LaureateHomepage = () => {
 
       {/* ── FOR AGENCIES ── */}
       <section id="agencies" style={{
-        padding: "0 48px 88px",
-        maxWidth: "860px",
-        margin: "0 auto",
+        padding: "64px 48px",
+        background: "#F7F5F2",
       }}>
         <div style={{
-          borderTop: "1px solid #E8E5E0",
-          paddingTop: "56px",
+          maxWidth: "640px",
+          margin: "0 auto",
           textAlign: "center",
           ...fadeIn(1.4),
         }}>
@@ -573,7 +580,6 @@ const LaureateHomepage = () => {
             fontSize: "18px",
             lineHeight: 1.85,
             color: "#5A6270",
-            maxWidth: "540px",
             margin: "0 auto 32px",
           }}>
             We welcome inquiries from agents and managers representing
@@ -586,8 +592,8 @@ const LaureateHomepage = () => {
             onMouseLeave={() => setHoverAgency(false)}
             style={{
               display: "inline-block",
-              padding: "12px 32px",
-              border: `1px solid ${hoverAgency ? "#9E7C4B" : "#D0CCC6"}`,
+              padding: "14px 36px",
+              border: `1px solid ${hoverAgency ? "#9E7C4B" : "#C8B89A"}`,
               color: hoverAgency ? "#9E7C4B" : "#8C8C8C",
               fontSize: "13px",
               letterSpacing: "2px",
