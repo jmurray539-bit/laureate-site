@@ -59,6 +59,7 @@ const LaureateHomepage = () => {
         @media (max-width: 768px) {
           .le-desktop-nav { display: none !important; }
           .le-hamburger { display: flex !important; }
+          .home-who-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
         </nav>
@@ -373,7 +374,7 @@ const LaureateHomepage = () => {
           Who we work with
         </p>
 
-        <div style={{
+        <div className="home-who-grid" style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: "0",
