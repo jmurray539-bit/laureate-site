@@ -149,9 +149,16 @@ const ARTICLES = [
 const LaureateEditors = () => {
   const [loaded, setLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setLoaded(true), 100);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => setShowBackToTop(window.scrollY > 400);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const fadeIn = (delay) => ({
@@ -323,21 +330,55 @@ const LaureateEditors = () => {
 
       {/* FOOTER */}
       <footer style={{
-        padding: "40px 48px",
+        padding: "48px 48px 40px",
         borderTop: "1px solid #E8E5E0",
         display: "flex",
-        justifyContent: "space-between",
+        flexDirection: "column",
         alignItems: "center",
-        flexWrap: "wrap",
-        gap: "12px",
+        gap: "24px",
       }}>
-        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <Link to="/"><img src={LOGO_SRC} alt="Laureate Edition" style={{ height: "40px", width: "auto" }}/></Link>
+        <Link to="/"><img src={LOGO_SRC} alt="Laureate Edition" style={{ height: "44px", width: "auto", opacity: 0.85 }}/></Link>
+        <div style={{ display: "flex", gap: "32px", fontSize: "12px", letterSpacing: "2px", textTransform: "uppercase" }}>
+          <Link to="/" style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
+          <Link to="/about" style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
+          <Link to="/agencies" style={{ color: "#8C8C8C", textDecoration: "none" }}>For Agencies</Link>
+          <Link to="/editors" style={{ color: "#8C8C8C", textDecoration: "none" }}>From the Editors</Link>
+          <Link to="/contact" style={{ color: "#8C8C8C", textDecoration: "none" }}>Discuss a Project</Link>
         </div>
         <span style={{ fontSize: "11px", color: "#BCBCBC" }}>
           &copy; 2026 Laureate Edition. All rights reserved.
         </span>
       </footer>
+
+      {/* ── BACK TO TOP ── */}
+      {showBackToTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          style={{
+            position: "fixed",
+            bottom: "36px",
+            right: "36px",
+            width: "44px",
+            height: "44px",
+            borderRadius: "50%",
+            background: "#9E7C4B",
+            border: "none",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            boxShadow: "0 2px 12px rgba(0,0,0,0.15)",
+            opacity: showBackToTop ? 1 : 0,
+            transition: "opacity 0.3s ease",
+            zIndex: 999,
+          }}
+          aria-label="Back to top"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 12V4M4 8l4-4 4 4" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+      )}
     </div>
   );
 };

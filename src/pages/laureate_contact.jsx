@@ -42,6 +42,7 @@ const LaureateContact = () => {
           <Link to="/" style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
           <Link to="/about" style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
           <Link to="/agencies" style={{ color: "#8C8C8C", textDecoration: "none" }}>For Agencies</Link>
+          <Link to="/editors" style={{ color: "#8C8C8C", textDecoration: "none" }}>From the Editors</Link>
           <Link to="/contact" style={{ color: "#1A2332", textDecoration: "none" }}>Discuss a Project</Link>
         </div>
         <button
@@ -59,6 +60,7 @@ const LaureateContact = () => {
           <Link to="/" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
           <Link to="/agencies" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>For Agencies</Link>
+          <Link to="/editors" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>From the Editors</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)} style={{ color: "#8C8C8C", textDecoration: "none" }}>Discuss a Project</Link>
         </div>
       )}
@@ -320,16 +322,20 @@ const LaureateContact = () => {
 
       {/* FOOTER */}
       <footer style={{
-        padding: "40px 48px",
+        padding: "48px 48px 40px",
         borderTop: "1px solid #E8E5E0",
         display: "flex",
-        justifyContent: "space-between",
+        flexDirection: "column",
         alignItems: "center",
-        flexWrap: "wrap",
-        gap: "12px",
+        gap: "24px",
       }}>
-        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <Link to="/"><img src={LOGO_SRC} alt="Laureate Edition" style={{ height: "40px", width: "auto" }}/></Link>
+        <Link to="/"><img src={LOGO_SRC} alt="Laureate Edition" style={{ height: "44px", width: "auto", opacity: 0.85 }}/></Link>
+        <div style={{ display: "flex", gap: "32px", fontSize: "12px", letterSpacing: "2px", textTransform: "uppercase" }}>
+          <Link to="/" style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
+          <Link to="/about" style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
+          <Link to="/agencies" style={{ color: "#8C8C8C", textDecoration: "none" }}>For Agencies</Link>
+          <Link to="/editors" style={{ color: "#8C8C8C", textDecoration: "none" }}>From the Editors</Link>
+          <Link to="/contact" style={{ color: "#8C8C8C", textDecoration: "none" }}>Discuss a Project</Link>
         </div>
         <span style={{ fontSize: "11px", color: "#BCBCBC" }}>
           &copy; 2026 Laureate Edition. All rights reserved.
