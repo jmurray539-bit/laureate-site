@@ -456,7 +456,7 @@ const LaureateAgencies = () => {
         gap: "24px",
       }}>
         <Link to="/"><img src={LOGO_SRC} alt="Laureate Edition" style={{ height: "44px", width: "auto", opacity: 0.85 }}/></Link>
-        <div style={{ display: "flex", gap: "32px", fontSize: "12px", letterSpacing: "2px", textTransform: "uppercase" }}>
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px 28px", fontSize: "12px", letterSpacing: "2px", textTransform: "uppercase", padding: "0 24px" }}>
           <Link to="/" style={{ color: "#8C8C8C", textDecoration: "none" }}>Home</Link>
           <Link to="/about" style={{ color: "#8C8C8C", textDecoration: "none" }}>About</Link>
           <Link to="/agencies" style={{ color: "#8C8C8C", textDecoration: "none" }}>For Agencies</Link>
