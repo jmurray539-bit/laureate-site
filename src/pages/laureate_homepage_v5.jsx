@@ -103,8 +103,8 @@ const LaureateHomepage = () => {
           margin: "0 0 28px",
           ...fadeIn(0.5),
         }}>
-          The people who shape industries<br />
-          rarely write the books about them.
+          Your ideas already travel.<br />
+          They just don't carry your name.
         </h1>
 
         <p style={{
@@ -115,7 +115,7 @@ const LaureateHomepage = () => {
           margin: "0 auto 16px",
           ...fadeIn(0.7),
         }}>
-          We work with the people behind the ideas — the frameworks others teach, the organizations others study, the practices others follow.
+          We help established professionals and industry pioneers turn a career's worth of thinking into a book that lasts. Not just on a screen. On a shelf.
         </p>
 
         <p style={{
