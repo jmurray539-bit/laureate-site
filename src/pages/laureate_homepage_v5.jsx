@@ -459,8 +459,8 @@ const LaureateHomepage = () => {
                 This is not
               </p>
               {[
-                "A mass-market ghostwriting shop",
-                "A memoir publisher",
+                "A self-service book package",
+                "A production-line publisher",
                 "An open submission press",
               ].map((item, i) => (
                 <p key={i} style={{
