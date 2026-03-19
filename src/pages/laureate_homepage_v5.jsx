@@ -118,18 +118,6 @@ const LaureateHomepage = () => {
           We help established professionals and industry pioneers turn a career's worth of thinking into a book that lasts. Not just on a screen. On a shelf.
         </p>
 
-        <p style={{
-          fontSize: "19px",
-          lineHeight: 1.85,
-          color: "#8899AA",
-          maxWidth: "620px",
-          margin: "0 auto 52px",
-          ...fadeIn(0.8),
-        }}>
-          We help them shape it into the kind of book that deserves
-          to exist. Not just on a screen. On a shelf.
-        </p>
-
         <div style={{
           width: "40px",
           height: "1px",
