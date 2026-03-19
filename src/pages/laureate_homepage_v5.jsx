@@ -489,9 +489,9 @@ const LaureateHomepage = () => {
                 This is
               </p>
               {[
-                "A curated editorial project",
-                "Built with established professionals",
-                "Shaped through guided interviews",
+                "A curated publishing house",
+                "For established professionals",
+                "Designed for lasting relevance",
               ].map((item, i) => (
                 <p key={i} style={{
                   fontSize: "17px",
