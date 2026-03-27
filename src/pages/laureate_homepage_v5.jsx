@@ -103,8 +103,8 @@ const LaureateHomepage = () => {
           margin: "0 0 28px",
           ...fadeIn(0.5),
         }}>
-          Your ideas already travel.<br />
-          They just don't carry your name.
+          Some stories are too important<br />
+          to tell only once
         </h1>
 
         <p style={{
@@ -115,7 +115,7 @@ const LaureateHomepage = () => {
           margin: "0 auto 16px",
           ...fadeIn(0.7),
         }}>
-          We help established professionals and industry pioneers turn a career's worth of thinking into a book that lasts. Not just on a screen. On a shelf.
+          We help accomplished individuals turn extraordinary life experiences into books that endure. On shelves, in libraries, and in the historical record.
         </p>
 
         <div style={{
