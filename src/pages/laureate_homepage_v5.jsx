@@ -170,7 +170,7 @@ const LaureateHomepage = () => {
           fontWeight: "normal",
           margin: "0 0 20px",
         }}>
-          Over time, experienced professionals accumulate more than stories.
+Over time, accomplished individuals accumulate more than credentials. They accumulate stories that matter.
         </p>
         <p style={{
           fontSize: "18px",
@@ -178,7 +178,7 @@ const LaureateHomepage = () => {
           color: "#5A6270",
           margin: "0 0 16px",
         }}>
-          They develop frameworks, judgments, and ways of thinking that others begin to rely on. Colleagues quote them. Teams adopt their methods. Students and clients repeat their language. In some cases, the ideas travel so far from their origin that the field forgets where they started.
+          They break barriers others said were insurmountable. They build organizations, mentor the next generation, and shape the communities around them. In some cases, their contributions ripple far beyond the circles that witnessed them firsthand.
         </p>
         <p style={{
           fontSize: "18px",
@@ -186,7 +186,7 @@ const LaureateHomepage = () => {
           color: "#5A6270",
           margin: "0",
         }}>
-          Yet most of this thinking exists only in presentations, conversations, and scattered writing. Eventually a question appears: not whether to publish, but how to assemble a lifetime of thinking into something coherent — something that places those ideas beside the name that shaped them.
+          Yet most of this living exists only in memories, scattered interviews, and accounts that capture fragments but never the whole. Eventually a question emerges: not whether to tell the story, but how to give it a form that lasts. Something that preserves a lifetime of experience with the depth and quality it deserves.
         </p>
       </section>
 
