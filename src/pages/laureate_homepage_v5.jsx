@@ -243,7 +243,7 @@ Over time, accomplished individuals accumulate more than credentials. They accum
           marginBottom: "24px",
           textAlign: "center",
         }}>
-          Forthcoming
+          Forthcoming Release
         </p>
         <div className="forthcoming-row">
           {/* Book image — flush left, shadow allowed to bleed right */}
