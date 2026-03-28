@@ -83,7 +83,7 @@ const LaureateHomepage = () => {
         textAlign: "center",
         background: "#1A2332",
       }}>
-        <div style={{ maxWidth: "860px", margin: "0 auto" }}>
+        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
         <p style={{
           fontSize: "16px",
           letterSpacing: "4px",
@@ -100,7 +100,7 @@ const LaureateHomepage = () => {
           lineHeight: 1.2,
           letterSpacing: "-0.5px",
           color: "#E8E4DF",
-          fontFamily: "'Tox Typewriter'", 
+          fontFamily: "'Corona 4 Typewriter'", 
           margin: "0 0 28px",
           ...fadeIn(0.5),
         }}>
