@@ -100,6 +100,7 @@ const LaureateHomepage = () => {
           lineHeight: 1.2,
           letterSpacing: "-0.5px",
           color: "#E8E4DF",
+          fontFamily: "'Tox Typewriter'", 
           margin: "0 0 28px",
           ...fadeIn(0.5),
         }}>
